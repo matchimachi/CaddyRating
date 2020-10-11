@@ -1,3 +1,5 @@
+//　評価入力画面
+
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
