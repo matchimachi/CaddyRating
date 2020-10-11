@@ -9,7 +9,7 @@
         android:id="@+id/to_second_fragment_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="マイページへ"
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="369dp"
         tools:ignore="MissingConstraints" />

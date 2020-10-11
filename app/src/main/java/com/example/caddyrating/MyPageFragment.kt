@@ -1,3 +1,5 @@
+//　マイページ画面
+
 package com.example.caddyrating
 
 import android.os.Bundle
