@@ -8,31 +8,127 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/title_mypage"
         android:layout_width="340dp"
-        android:layout_height="39dp"
+        android:layout_height="40dp"
         android:layout_centerInParent="true"
-        android:text="Welcome to Second Fragment"
+        android:text="@string/title_my_page"
         android:textAlignment="center"
         android:textColor="#001D74"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="335dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="284dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_mypage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/caddy"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="38dp" />
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名前"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_birthday"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="キャディ　たぬき"
+        android:layout_marginRight="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_name"
+        />
+
+    <TextView
+        android:id="@+id/text_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生年月日"
+        app:layout_constraintLeft_toLeftOf="@+id/text_name"
+        app:layout_constraintBottom_toTopOf="@+id/text_workable_area"/>
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1990/10/13"
+        android:layout_marginRight="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_birthday"
+        />
+
+    <TextView
+        android:id="@+id/text_workable_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="勤務可能なエリア"
+        app:layout_constraintLeft_toLeftOf="@+id/text_name"
+        app:layout_constraintBottom_toTopOf="@+id/text_evaluation_item1"/>
+
+    <TextView
+        android:id="@+id/text_evaluation_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="評価項目1"
+        app:layout_constraintLeft_toLeftOf="@+id/text_name"
+        app:layout_constraintBottom_toTopOf="@+id/text_evaluation_item2"/>
+
+    <TextView
+        android:id="@+id/text_evaluation_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="評価項目2"
+        app:layout_constraintLeft_toLeftOf="@+id/text_name"
+        app:layout_constraintBottom_toTopOf="@+id/text_evaluation_average"/>
+
+    <TextView
+        android:id="@+id/text_evaluation_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="評価平均"
+        app:layout_constraintLeft_toLeftOf="@+id/text_name"
+        app:layout_constraintBottom_toTopOf="@+id/text_rank"/>
+
+    <TextView
+        android:id="@+id/text_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ランク"
+        app:layout_constraintLeft_toLeftOf="@+id/text_name"
+        tools:layout_editor_absoluteY="331dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ゴルフ場へのご意見"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ログアウト"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        android:layout_marginStart="40dp"
+        app:layout_constraintTop_toTopOf="@+id/button" />
 
     <Button
         android:id="@+id/back_button"
