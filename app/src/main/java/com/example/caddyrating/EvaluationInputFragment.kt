@@ -28,7 +28,7 @@ class EvaluationInput : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val toSecondButton = view.findViewById<Button>(R.id.to_second_fragment_button)
         toSecondButton.setOnClickListener{
-            Log.d(TAG, "toSecondButton pressed!")
+            Log.d(TAG, "tos MyPageButton pressed!")
             val secondFragment = MyPageFragment()
             val fragmentTransaction = fragmentManager?.beginTransaction()
             fragmentTransaction?.addToBackStack(null)
