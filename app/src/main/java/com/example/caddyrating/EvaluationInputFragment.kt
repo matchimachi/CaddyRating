@@ -24,6 +24,7 @@ class EvaluationInput : Fragment() {
         return inflater.inflate(R.layout.evaluationinput, container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val toSecondButton = view.findViewById<Button>(R.id.to_second_fragment_button)
