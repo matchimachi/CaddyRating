@@ -25,7 +25,9 @@ class EvaluationInput : Fragment() {
     }
 
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        /*
         super.onViewCreated(view, savedInstanceState)
         val toSecondButton = view.findViewById<Button>(R.id.to_second_fragment_button)
         toSecondButton.setOnClickListener{
@@ -35,6 +37,8 @@ class EvaluationInput : Fragment() {
             fragmentTransaction?.addToBackStack(null)
             fragmentTransaction?.replace(R.id.fragment_container, secondFragment)
             fragmentTransaction?.commit()
-        }
+
+        }*/
     }
+
 }
