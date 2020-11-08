@@ -62,10 +62,13 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="ゴルフ場名"
+        android:inputType="textMultiLine"
+        android:hint="ゴルフ場名"
         app:layout_constraintTop_toBottomOf="@+id/editDate"
-        app:layout_constraintLeft_toLeftOf="@+id/editDate" />
+        app:layout_constraintLeft_toRightOf="@+id/textView_golfPlace"
+        android:layout_marginLeft="25dp"
+         />
+<!--        入力文字数によって画面外にはみ出てしまう-->
     <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
